@@ -3,7 +3,7 @@
 import {IProduct} from '../types/Products'
 import {ProductsActionTypes} from '../types/Actions--enums'
 import {normalize} from 'normalizr'
-import * as schema from '../config/productSchema'
+import * as schema from '../normalizr/productSchema'
 import {Actions} from '../types/Actions'
 
 export const loadProductsSuccess = (response: IProduct[]): Actions => {

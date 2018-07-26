@@ -8,4 +8,5 @@ export default () =>
 			<a>About</a>
 		</Link>
 		<MyShoppingCart cart={{}}/>
+		{/*<MyShoppingCart/>*/}
 	</div>

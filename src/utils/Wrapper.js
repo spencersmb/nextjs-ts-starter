@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 const {Provider} = require('react-redux')
-const {initStore} = require('../../store')
+const {initStore} = require('../store')
 // import {Provider} from 'react-redux'
 // import {initStore} from '../store'
 
