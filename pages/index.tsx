@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {MyShoppingCart} from '../src/components/cart/myCart'
 
 export default () =>
 	<div>
@@ -6,4 +7,5 @@ export default () =>
 		<Link href="/about">
 			<a>About</a>
 		</Link>
+		<MyShoppingCart cart={{}}/>
 	</div>

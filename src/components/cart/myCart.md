@@ -1,0 +1,5 @@
+myCart example:
+
+```js
+ <MyShoppingCart />
+```

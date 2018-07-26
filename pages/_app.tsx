@@ -31,6 +31,7 @@ const Wrapper: React.SFC<any> = (props): any => {
 
 interface IAppStore {
 	store: any,
+	cart: any,
 	Component: any
 }
 

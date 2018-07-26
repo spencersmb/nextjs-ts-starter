@@ -6,18 +6,20 @@ import {productsReducer} from './reducers/productsReducer'
 import initState from './reducers/initialState'
 import {IState} from './types/Redux'
 import {IProductState} from './types/Products'
-// import { cartReducer } from './reducers/cartReducer'
+import {cartReducer} from './reducers/cartReducer'
 import {reducer as toastrReducer} from 'react-redux-toastr'
+import {ICartState} from './types/Cart'
 
 interface IAppState {
 	products: IProductState,
-	toastr: any
+	toastr: any,
+	cart: ICartState
 }
 
 export const initStore = (initialState: IState = initState) => {
 	// mirror of state from original app
 	const reducers = combineReducers<IAppState>({
-		// cart: cartReducer,
+		cart: cartReducer,
 		// breakPoint: breakPointReducer,
 		products: productsReducer,
 		toastr: toastrReducer,
