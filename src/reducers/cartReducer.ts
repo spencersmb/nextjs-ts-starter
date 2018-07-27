@@ -1,23 +1,23 @@
-// @flow
 import initialState from './initialState'
 import {ICartState} from '../types/Cart'
 import {Reducer} from 'redux'
-// import { actionTypes } from '../actions/actionTypes'
+import {CartActionTypes} from '../types/Actions--enums'
+import {Actions} from '../types/Actions'
 // import { totalItemsInCart } from '../utils/cartUtils'
 
-export const cartReducer: Reducer<ICartState> = (state: ICartState = initialState.cart, action: any): ICartState => {
+export const cartReducer: Reducer<ICartState> = (state: ICartState = initialState.cart, action: Actions): ICartState => {
 	switch (action.type) {
 
-		// case actionTypes.ADD_TO_CART:
-		//
-		// 	return {
-		// 		...state,
-		// 		items: {
-		// 			...action.payload.item, // updated Item
-		// 			...state.items
-		// 		}
-		// 	}
-		//
+		case CartActionTypes.ADD_TO_CART:
+
+			return {
+				...state,
+				items: {
+					...action.payload.item, // updated Item
+					...state.items
+				}
+			}
+
 		// case actionTypes.UPDATE_CART_TOTAL:
 		//
 		// 	// calc total items here so we dont use getState in Action creater
@@ -27,10 +27,10 @@ export const cartReducer: Reducer<ICartState> = (state: ICartState = initialStat
 		// 		...state,
 		// 		totalItems: totalItems
 		// 	}
-		// case actionTypes.UPDATE_CART_STATE:
-		// 	return {
-		// 		...action.payload
-		// 	}
+		case CartActionTypes.UPDATE_CART_STATE:
+			return {
+				...action.payload
+			}
 
 		default:
 			return state

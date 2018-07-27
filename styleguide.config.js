@@ -1,15 +1,9 @@
 const path = require('path')
 const glob = require('glob')
+const dir = __dirname + './utils/Wrapper'
 
 module.exports = {
-	// components: function () {
-	// 	return glob.sync('src/components/**/*.{ts,tsx}')
-	// 		.filter(function (module) {
-	// 			return /\/[A-Z]\w*\.tsx$/.test(module)
-	// 		})
-	// },
 	assetsDir: 'docs/',
-	// components: 'src/components/**/*.{ts,tsx}',
 	ignore: [
 		'src/setupTests.ts',
 		'**/*.spec.ts',
@@ -20,8 +14,6 @@ module.exports = {
 	],
 	pagePerSection: true,
 	propsParser: require('react-docgen-typescript').parse,
-	// propsParser: require('react-docgen-typescript').withDefaultConfig({propFilter: {skipPropsWithoutDoc: true}}).parse,
-	// resolver: require('react-docgen').resolver.findAllComponentDefinitions,
 	resolver: require('react-docgen').resolver.findAllExportedComponentDefinitions,
 	sections: [
 		{
@@ -47,44 +39,9 @@ module.exports = {
 			]
 		}
 	],
-	// styleguideComponents: {
-	// 	// Wrapper: path.join(__dirname, './utils/Wrapper')
-	// 	Wrapper: '/Users/et64/CloudStation/github/et-shoppe-ts/utils/Wrapper'
-	// },
-	// skipComponentsWithoutExample: true,
-	// styles: {
-	// 	StyleGuide: {
-	// 		content: {
-	// 			'& .rsg--code-49': {
-	// 				fontWeight: 'bold'
-	// 			}
-	// 		}
-	// 	}
-	// },
+	styleguideComponents: {
+		Wrapper: path.join(__dirname, 'src/utils/Wrapper')
+	},
 	title: 'React Style Guide Example',
-	// webpackConfig: require('react-scripts-ts/config/webpack.config.dev.js')
 	webpackConfig: require('./config/styleguide-webpack.config.dev.js')
-	// webpackConfig: {
-	// 	entry: './pages/index.tsx',
-	// 	output: {
-	// 		filename: 'bundle.js',
-	// 		path: path.resolve(__dirname, 'build'),
-	// 	},
-	// 	module: {
-	// 		rules: [
-	// 			{
-	// 				test: /\.(ts|tsx)$/,
-	// 				use: [
-	// 					{
-	// 						loader: require.resolve('ts-loader'),
-	// 						options: {
-	// 							// disable type checker - we will use it in fork plugin
-	// 							// transpileOnly: true,
-	// 						},
-	// 					},
-	// 				],
-	// 			},
-	// 		]
-	// 	}
-	// }
 }
