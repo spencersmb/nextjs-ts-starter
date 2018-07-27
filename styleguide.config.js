@@ -30,7 +30,7 @@ module.exports = {
 				{
 
 					components: () => [
-						'./src/components/cart/myCart.tsx'
+						'./src/components/cart/index.tsx'
 					],
 					exampleMode: 'expand', // 'hide' | 'collapse' | 'expand'
 					name: 'Buttons',

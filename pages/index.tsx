@@ -1,14 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-// import StandardHoc from '../hoc/standardPage'
+import StandardHoc from '../src/hoc/standardHoc'
 import {Action, bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {getAllProducts} from '../src/actions/productActions'
 import {Dispatch} from 'redux'
 // import ProductsList from '../components/products/productsList'
-// import fetch from 'isomorphic-unfetch'
-// import { envConfig } from '../config/envConfig'
-// import {ICtx} from '../src/types/Ctx'
+import {ICtx} from '../src/types/Ctx'
 import {IState} from '../src/types/Redux'
 import {IProductState} from '../src/types/Products'
 
@@ -22,33 +20,18 @@ interface IProps {
 }
 
 export class HomePage extends React.Component<IProps> {
-	static async getInitialProps() {
-		// ctx: ICtx
-		// const user = ctx
-		// let pageProps
-		try {
-
-			// await ctx.store.dispatch(getAllProducts())
-			// const url: string = `${envConfig.BACKEND_URL}/wp-json/customroutes/products`
-			// const res = await fetch(url)
-			// pageProps = await res.json()
-			// console.log(`Fetched show: ${pageProps}`)
-
-		} catch (e) {
-			console.log('store API error', e)
-
-		}
+	static async getInitialProps(ctx: ICtx) {
+		await ctx.store.dispatch(getAllProducts())
 		return {}
 	}
 
-	async componentDidMount(): Promise<void> {
-
-		if (Object.keys(this.props.products.list).length) {
-			return
-		}
-
-		await this.props.getAllProducts()
-	}
+	// async componentDidMount(): Promise<void> {
+	//
+	// 	if (Object.keys(this.props.products.list).length) {
+	// 		return
+	// 	}
+	// 	await this.props.getAllProducts()
+	// }
 
 	render() {
 		return (
@@ -100,8 +83,6 @@ const mapDispatchToProps = (dispatch: Dispatch<Action, IState>) => {
 	}
 }
 
-// export default HomePage
-// export default connect(mapStateToProps, mapDispatchToProps)(StandardHoc(HomePage, 'Home'))
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
+export default connect(mapStateToProps, mapDispatchToProps)(StandardHoc(HomePage, 'Home'))
 
 

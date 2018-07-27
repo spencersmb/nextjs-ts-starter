@@ -15,5 +15,3 @@ export const env = {
 	STRIPE_KEY: prod ? config.STRIPE_LIVE_KEY : config.STRIPE_TEST_KEY,
 	WEBSITE_TITLE: 'Now Thats Delicious!',
 }
-
-// exports.envConfig = env

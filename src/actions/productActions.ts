@@ -23,7 +23,6 @@ export const getAllProducts = () => async (dispatch: Dispatch<Action, IState>): 
 
 		const body: IProduct[] = await response.json()
 
-
 		// insert LOADING BAR ACTION === false  for PRODUCTS
 		dispatch(loadProductsSuccess(body))
 	} catch (e) {

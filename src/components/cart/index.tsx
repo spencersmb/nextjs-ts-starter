@@ -4,11 +4,12 @@ import {connect} from 'react-redux'
 // import { updateCartState } from '../../actions/productsActions'
 // import { Dispatch } from 'redux'
 import {IState} from '../../types/Redux'
+import {ICartState} from '../../types/Cart'
 // import { getLocalStorageCart } from '../../utils/cartUtils'
 // import CartCheckout from './myCart_checkout'
 
 interface IProps {
-	cart: any,
+	cart: ICartState
 	// updateCartState: (CartState | {}) => void
 }
 
@@ -67,13 +68,4 @@ const mapStateToProps = (state: IState): any => {
 // 	}
 // }
 
-export default connect(mapStateToProps, null)(MyShoppingCart)
-
-//
-// export class MyShoppingCart extends React.Component {
-// 	render() {
-// 		return (
-// 			<div>test</div>
-// 		)
-// 	}
-// }
+export default connect<IProps>(mapStateToProps)(MyShoppingCart)

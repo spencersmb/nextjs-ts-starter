@@ -4,12 +4,13 @@ import App, {Container} from 'next/app'
 import withRedux from 'next-redux-wrapper'
 import {initStore} from '../src/store'
 // import ResizeObserver from '../components/utils/resizeObserver'
-// import MyShoppingCart from '../components/cart/myCart'
+import MyShoppingCart from '../src/components/cart'
 import ReduxToastr from 'react-redux-toastr'
 
 const Wrapper: React.SFC<any> = (props): any => {
 	const Component = props.component
 	return [
+		<MyShoppingCart key="myCart"/>,
 		<Component key='main'{...props} />,
 		<ReduxToastr
 			key='toastr'

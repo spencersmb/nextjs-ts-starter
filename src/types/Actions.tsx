@@ -1,8 +1,6 @@
 import {CartActionTypes, ProductsActionTypes} from './Actions--enums'
 import {ICartItem, ICartState} from './Cart'
 
-// import {Dispatch} from 'redux'
-
 export interface ILoadProductsSuccess {
 	type: ProductsActionTypes.LOAD_PRODUCTS_SUCCESS,
 	payload: any
@@ -42,6 +40,4 @@ export type Actions =
 	| ProductActions
 	| CartActions
 
-// Dispatch
-// export type DispatchActions = (action: Actions) => Dispatch<Actions>
 
