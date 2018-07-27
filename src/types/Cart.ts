@@ -8,3 +8,5 @@ export interface ICartState {
 export interface ICartItem {
 	[id: string]: { qty: number }
 }
+
+export interface ILocalStorageCart {items: ICartItem, totalItems: number}

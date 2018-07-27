@@ -29,7 +29,11 @@ export const cartReducer: Reducer<ICartState> = (state: ICartState = initialStat
 			}
 		case CartActionTypes.UPDATE_CART_STATE:
 			return {
-				...action.payload
+				...state,
+				items: {
+					...action.payload.items
+				},
+				totalItems: action.payload.totalItems
 			}
 
 		default:

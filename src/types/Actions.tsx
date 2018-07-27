@@ -1,5 +1,5 @@
 import {CartActionTypes, ProductsActionTypes} from './Actions--enums'
-import {ICartItem, ICartState} from './Cart'
+import {ICartItem, ILocalStorageCart} from './Cart'
 
 export interface ILoadProductsSuccess {
 	type: ProductsActionTypes.LOAD_PRODUCTS_SUCCESS,
@@ -20,7 +20,7 @@ export interface IAddItemToCart {
 
 export interface IUpdateCartState {
 	type: CartActionTypes.UPDATE_CART_STATE,
-	payload: ICartState
+	payload: ILocalStorageCart
 }
 
 export interface IUpdateCartTotal {

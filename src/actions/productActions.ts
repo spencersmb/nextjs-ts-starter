@@ -1,7 +1,7 @@
 /* tslint:disable object-literal-sort-keys*/
 
 import {IProduct} from '../types/Products'
-import {ProductsActionTypes} from '../types/Actions--enums'
+import {CartActionTypes, ProductsActionTypes} from '../types/Actions--enums'
 import {normalize} from 'normalizr'
 import * as schema from '../normalizr/productSchema'
 import {Actions} from '../types/Actions'
@@ -9,6 +9,7 @@ import {Action, Dispatch} from 'redux'
 import {toastr} from 'react-redux-toastr'
 import {IState} from '../types/Redux'
 import ProductsApi from '../api/productsApi'
+import {ILocalStorageCart} from '../types/Cart'
 
 export const getAllProducts = () => async (dispatch: Dispatch<Action, IState>): Promise<void> => {
 	// Add Loading Dispatch spinner
@@ -47,5 +48,15 @@ export const loadProductsError = (errorMessage: string): Actions => {
 	return {
 		type: ProductsActionTypes.LOAD_PRODUCTS_ERROR,
 		payload: errorMessage
+	}
+}
+
+/*
+ Used to Initialize the cart from localStorage on Page Refresh
+ */
+export const updateCartState = (cartData: ILocalStorageCart): Actions => {
+	return {
+		type: CartActionTypes.UPDATE_CART_STATE,
+		payload: cartData
 	}
 }

@@ -42,11 +42,13 @@ export default withRedux(initStore)(
 
 		render() {
 			const {Component, pageProps, store} = this.props
-			return <Container>
-				<Provider store={store}>
-					<Wrapper component={Component} {...pageProps} />
-				</Provider>
-			</Container>
+			return (
+				<Container>
+					<Provider store={store}>
+						<Wrapper component={Component} {...pageProps} />
+					</Provider>
+				</Container>
+			)
 		}
 	}
 )
