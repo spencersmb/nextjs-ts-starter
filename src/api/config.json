@@ -1,0 +1,7 @@
+{
+  "DEV_URL": "http://shopeverytuesday.local",
+  "PROD_URL": "http://shopeverytuesday.local",
+  "TEST_URL": "http://localhost:3000/test",
+  "STRIPE_TEST_KEY": "pk_test_aLWLQsGr69kfKdsgQ0ReMANP",
+  "STRIPE_LIVE_KEY": "pk_test_aLWLQsGr69kfKdsgQ0ReMANP"
+}

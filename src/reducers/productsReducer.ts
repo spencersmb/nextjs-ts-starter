@@ -1,4 +1,3 @@
-import {actionTypes} from '../actions/actionTypes'
 import initialState from './initialState'
 import * as normalizerUtils from '../utils/normalizrUtils'
 import {Reducer} from 'redux'
@@ -7,7 +6,7 @@ import {ProductsActionTypes} from '../types/Actions--enums'
 import {IProductState} from '../types/Products'
 
 
-export const productsReducer: Reducer<IProductState> = (state: IProductState = initialState.products, action: Actions): any => {
+export const productsReducer: Reducer<IProductState> = (state: IProductState = initialState.products, action: Actions): IProductState => {
 	switch (action.type) {
 		case ProductsActionTypes.LOAD_PRODUCTS_SUCCESS:
 			return {
@@ -15,7 +14,7 @@ export const productsReducer: Reducer<IProductState> = (state: IProductState = i
 				list: {...normalizerUtils.transformNormalizedData(action.payload)}
 			}
 
-		case actionTypes.LOAD_PRODUCTS_ERROR:
+		case ProductsActionTypes.LOAD_PRODUCTS_ERROR:
 			return {
 				...state,
 				error: action.payload,

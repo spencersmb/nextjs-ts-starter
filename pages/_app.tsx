@@ -9,11 +9,6 @@ import ReduxToastr from 'react-redux-toastr'
 
 const Wrapper: React.SFC<any> = (props): any => {
 	const Component = props.component
-	// return (
-	// 	<React.Fragment>
-	// 		<Component key='main'{...props} />,
-	// 	</React.Fragment>
-	// )
 	return [
 		<Component key='main'{...props} />,
 		<ReduxToastr

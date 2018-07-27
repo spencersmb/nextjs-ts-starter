@@ -1,4 +1,5 @@
 import {IProductState} from './Products'
+import {Action, Dispatch} from 'redux'
 
 export interface IState {
 	// breakPoint: number,
@@ -13,4 +14,13 @@ export interface IState {
 		}
 	},
 	products: IProductState,
+}
+
+export interface IReduxStore {
+	dispatch: Dispatch<Action, IState>,
+	getState: () => any,
+	liftedStore: any,
+	replaceReducer: (e: any) => any,
+	subscribe: (s: any) => any,
+	'Symbol(observable)': () => any
 }
