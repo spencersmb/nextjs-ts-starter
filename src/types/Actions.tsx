@@ -1,4 +1,4 @@
-import {CartActionTypes, ProductsActionTypes} from './Actions--enums'
+import {CartActionTypes, ProductsActionTypes, WindowActionTypes} from './Actions--enums'
 import {ICartItem, ILocalStorageCart} from './Cart'
 
 export interface ILoadProductsSuccess {
@@ -27,6 +27,11 @@ export interface IUpdateCartTotal {
 	type: CartActionTypes.UPDATE_CART_TOTAL
 }
 
+export interface IChangeBreakPoint {
+	type: WindowActionTypes.CHANGE_BREAKPOINT,
+	payload: number
+}
+
 type ProductActions =
 	| ILoadProductsSuccess
 	| ILoadProductsError
@@ -36,7 +41,11 @@ type CartActions =
 	| IUpdateCartState
 	| IUpdateCartTotal
 
+type WindowActions =
+	| IChangeBreakPoint
+
 export type Actions =
+	| WindowActions
 	| ProductActions
 	| CartActions
 

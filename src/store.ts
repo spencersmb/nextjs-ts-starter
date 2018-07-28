@@ -1,7 +1,6 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
-// import { breakPointReducer } from './reducers/breakPointReducer'
 import {productsReducer} from './reducers/productsReducer'
 import initState from './reducers/initialState'
 import {IState} from './types/Redux'
@@ -9,8 +8,10 @@ import {IProductState} from './types/Products'
 import {cartReducer} from './reducers/cartReducer'
 import {reducer as toastrReducer} from 'react-redux-toastr'
 import {ICartState} from './types/Cart'
+import {breakPointReducer} from './reducers/breakPointReducer'
 
 interface IAppState {
+	breakPoint: number,
 	products: IProductState,
 	toastr: any,
 	cart: ICartState
@@ -19,8 +20,8 @@ interface IAppState {
 export const initStore = (initialState: IState = initState) => {
 	// mirror of state from original app
 	const reducers = combineReducers<IAppState>({
+		breakPoint: breakPointReducer,
 		cart: cartReducer,
-		// breakPoint: breakPointReducer,
 		products: productsReducer,
 		toastr: toastrReducer,
 	})

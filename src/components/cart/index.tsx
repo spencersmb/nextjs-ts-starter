@@ -6,6 +6,8 @@ import CartCheckout from './checkout'
 import {getLocalStorageCart} from '../../utils/cartUtils'
 import {Action, bindActionCreators, Dispatch} from 'redux'
 import {updateCartState} from '../../actions/productActions'
+import styled from 'styled-components'
+import {media} from '../../styles/base/mq'
 
 interface IProps {
 	cart: ICartState;
@@ -48,14 +50,25 @@ export class MyShoppingCart extends React.Component<IProps, IComponentState> {
 
 	render() {
 		return (
-			<div style={{position: 'relative', zIndex: 3}}>
-				Total Items In Cart: {this.props.cart.totalItems}
+			<Cart style={{position: 'relative', zIndex: 3}}>
+				<p>
+					Total Items In Cart: {this.props.cart.totalItems}
+				</p>
 				<button onClick={this.openCart}> Cart Toggle</button>
 				<CartCheckout isOpen={this.state.isOpen} closeCart={this.closeCart}/>
-			</div>
+			</Cart>
 		)
 	}
 }
+
+const Cart = styled.div`
+	p{
+		color: red;
+		${media.tablet`
+			color: green;
+		`}
+	}
+`
 
 const mapStateToProps = (state: IState): any => {
 	return {

@@ -11,20 +11,20 @@
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" afterPath="$PROJECT_DIR$/pages/_app.tsx" />
       <change beforePath="$PROJECT_DIR$/reducers/cartReducer.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/reducers/initialState.ts" afterPath="$PROJECT_DIR$/src/reducers/initialState.ts" />
       <change beforePath="$PROJECT_DIR$/src/actions/actionTypes.ts" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/actions/productActions.ts" afterPath="$PROJECT_DIR$/src/actions/productActions.ts" />
       <change beforePath="$PROJECT_DIR$/src/api/envConfig.ts" afterPath="$PROJECT_DIR$/src/api/envConfig.ts" />
       <change beforePath="$PROJECT_DIR$/src/components/cart/index.tsx" afterPath="$PROJECT_DIR$/src/components/cart/index.tsx" />
       <change beforePath="$PROJECT_DIR$/src/reducers/cartReducer.ts" afterPath="$PROJECT_DIR$/src/reducers/cartReducer.ts" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/initialState.ts" afterPath="$PROJECT_DIR$/src/reducers/initialState.ts" />
       <change beforePath="$PROJECT_DIR$/src/reducers/productsReducer.ts" afterPath="$PROJECT_DIR$/src/reducers/productsReducer.ts" />
+      <change beforePath="$PROJECT_DIR$/src/store.ts" afterPath="$PROJECT_DIR$/src/store.ts" />
       <change beforePath="$PROJECT_DIR$/src/types/Actions--enums.ts" afterPath="$PROJECT_DIR$/src/types/Actions--enums.ts" />
       <change beforePath="$PROJECT_DIR$/src/types/Actions.tsx" afterPath="$PROJECT_DIR$/src/types/Actions.tsx" />
       <change beforePath="$PROJECT_DIR$/src/types/Cart.ts" afterPath="$PROJECT_DIR$/src/types/Cart.ts" />
       <change beforePath="$PROJECT_DIR$/src/types/Redux.ts" afterPath="$PROJECT_DIR$/src/types/Redux.ts" />
       <change beforePath="$PROJECT_DIR$/src/utils/Wrapper.js" afterPath="$PROJECT_DIR$/src/utils/Wrapper.js" />
       <change beforePath="$PROJECT_DIR$/src/utils/cartUtils.ts" afterPath="$PROJECT_DIR$/src/utils/cartUtils.ts" />
-      <change beforePath="$PROJECT_DIR$/store.ts" afterPath="$PROJECT_DIR$/src/store.ts" />
       <change beforePath="$PROJECT_DIR$/styleguide.config.js" afterPath="$PROJECT_DIR$/styleguide.config.js" />
       <change beforePath="$PROJECT_DIR$/types/Cart.ts" afterPath="" />
       <change beforePath="$PROJECT_DIR$/types/Products.ts" afterPath="$PROJECT_DIR$/src/types/Products.ts" />
@@ -55,25 +55,10 @@
       <file leaf-file-name="Actions.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/Actions.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="697">
+              <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
               <folding>
-                <element signature="e#0#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productActions.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/productActions.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#46#88#0" expanded="true" />
-                <element signature="e#606#1164#0" expanded="false" />
-                <element signature="e#1237#1371#0" expanded="false" />
+                <element signature="e#0#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,29 +77,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cartUtils.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/cartUtils.ts">
+      <file leaf-file-name="initialState.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/initialState.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-                <element signature="e#105#511#0" expanded="false" />
-                <element signature="e#718#1272#0" expanded="false" />
-                <element signature="e#1678#2117#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cartReducer.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/cartReducer.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="52">
+              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,33 +90,93 @@
       <file leaf-file-name="Actions--enums.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/Actions--enums.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="312">
+              <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_app.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_app.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/_app.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="35" column="57" lean-forward="false" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+            <state relative-caret-position="312">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <element signature="e#252#303#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Redux.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/types/Redux.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="breakPointReducer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/breakPointReducer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resizeObservable.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/window/resizeObservable.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="167" column="6" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="167" selection-end-column="6" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#53#78#0" expanded="true" />
+                <element signature="n#!!block;n#IProps#0" expanded="false" />
+                <element signature="n#!!block;n#IState#0" expanded="false" />
+                <element signature="e#638#661#0" expanded="false" />
+                <element signature="n#!!block;n#IResizeObservable#0" expanded="false" />
+                <element signature="e#1115#1201#0" expanded="false" />
+                <element signature="e#1211#1312#0" expanded="false" />
+                <element signature="n#!!block;n#_setBreakpointsArray#0;n#ReactResizeObserver#0" expanded="false" />
+                <marker date="1532774522914" expanded="true" signature="3617:3869" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/cart/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="455">
+              <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
+                <marker date="1532774823154" expanded="true" signature="1540:1542" ph="{...}" />
+                <marker date="1532774823154" expanded="true" signature="1540:1602" ph="{...}" />
+                <marker date="1532774823154" expanded="true" signature="1543:1601" ph="{...}" />
+                <marker date="1532774823154" expanded="true" signature="1543:1602" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -160,8 +188,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="Typescript JSX" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -171,10 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/styleguid.config.js" />
-        <option value="$PROJECT_DIR$/docs/overview.md" />
-        <option value="$PROJECT_DIR$/components/cart/myCart.md" />
         <option value="$PROJECT_DIR$/types/Redux.ts" />
         <option value="$PROJECT_DIR$/components/cart/myCart.tsx" />
         <option value="$PROJECT_DIR$/reducers/cartReducer.ts" />
@@ -183,7 +207,6 @@
         <option value="$PROJECT_DIR$/types/Cart.ts" />
         <option value="$PROJECT_DIR$/utils/Wrapper.ts" />
         <option value="$PROJECT_DIR$/utils/Wrapper.tsx" />
-        <option value="$PROJECT_DIR$/src/store.ts" />
         <option value="$PROJECT_DIR$/src/components/cart/myCart.tsx" />
         <option value="$PROJECT_DIR$/utils/normalizrUtils.ts" />
         <option value="$PROJECT_DIR$/utils/Wrapper.js" />
@@ -192,12 +215,10 @@
         <option value="$PROJECT_DIR$/src/components/cart/myCart.md" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/utils/Wrapper.js" />
-        <option value="$PROJECT_DIR$/src/types/Actions--enums.ts" />
         <option value="$PROJECT_DIR$/src/reducers/productsReducer.ts" />
         <option value="$PROJECT_DIR$/src/api/config.json" />
         <option value="$PROJECT_DIR$/src/types/*.d.ts" />
         <option value="$PROJECT_DIR$/src/api/productsApi.ts" />
-        <option value="$PROJECT_DIR$/src/types/Redux.ts" />
         <option value="$PROJECT_DIR$/src/types/Ctx.ts" />
         <option value="$PROJECT_DIR$/src/hoc/standardHoc.ts" />
         <option value="$PROJECT_DIR$/src/api/envConfig.ts" />
@@ -216,12 +237,19 @@
         <option value="$PROJECT_DIR$/static/styles/toastr.min.css" />
         <option value="$PROJECT_DIR$/src/components/cart/checkout/index.tsx" />
         <option value="$PROJECT_DIR$/src/types/Cart.ts" />
-        <option value="$PROJECT_DIR$/src/components/cart/index.tsx" />
-        <option value="$PROJECT_DIR$/src/types/Actions.tsx" />
         <option value="$PROJECT_DIR$/src/actions/productActions.ts" />
         <option value="$PROJECT_DIR$/src/reducers/cartReducer.ts" />
         <option value="$PROJECT_DIR$/src/utils/cartUtils.ts" />
+        <option value="$PROJECT_DIR$/src/types/Actions--enums.ts" />
+        <option value="$PROJECT_DIR$/src/types/Actions.tsx" />
+        <option value="$PROJECT_DIR$/src/actions/breakPointActions.ts" />
+        <option value="$PROJECT_DIR$/src/reducers/initialState.ts" />
+        <option value="$PROJECT_DIR$/src/types/Redux.ts" />
+        <option value="$PROJECT_DIR$/src/reducers/breakPointReducer.ts" />
+        <option value="$PROJECT_DIR$/src/store.ts" />
         <option value="$PROJECT_DIR$/pages/_app.tsx" />
+        <option value="$PROJECT_DIR$/src/components/window/resizeObservable.tsx" />
+        <option value="$PROJECT_DIR$/src/components/cart/index.tsx" />
       </list>
     </option>
   </component>
@@ -292,7 +320,7 @@
               <item name="et-shoppe-ts" type="b2602c69:ProjectViewProjectNode" />
               <item name="et-shoppe-ts" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hoc" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="et-shoppe-ts" type="b2602c69:ProjectViewProjectNode" />
@@ -379,12 +407,12 @@
       <workItem from="1532604886761" duration="171000" />
       <workItem from="1532605063988" duration="1562000" />
       <workItem from="1532606634643" duration="8325000" />
-      <workItem from="1532614982558" duration="34357000" />
+      <workItem from="1532614982558" duration="38677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47076000" />
+    <option name="totallyTimeSpent" value="51396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="318" y="23" width="2010" height="1395" extended-state="0" />
@@ -441,35 +469,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/types/Products.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding>
-            <element signature="e#95#148#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/Overview.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="268">
-            <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7358">
@@ -482,14 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/initialState.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -594,17 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-            <element signature="e#239#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -618,16 +598,6 @@
         <state relative-caret-position="52">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/Redux.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,42 +869,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/cart/checkout/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding>
-            <element signature="e#10#40#0" expanded="true" />
-            <marker date="1532729692408" expanded="true" signature="1129:1344" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/types/Cart.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/cart/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/Actions.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,19 +915,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/types/Actions--enums.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="312">
+          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/Actions.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/cart/checkout/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1111">
+          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding>
+            <element signature="e#10#40#0" expanded="true" />
+            <marker date="1532729692408" expanded="true" signature="1129:1344" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/breakPointActions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/Redux.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/initialState.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/breakPointReducer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/_app.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="35" column="57" lean-forward="false" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        <state relative-caret-position="312">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#252#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/window/resizeObservable.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="167" column="6" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="167" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#53#78#0" expanded="true" />
+            <element signature="n#!!block;n#IProps#0" expanded="false" />
+            <element signature="n#!!block;n#IState#0" expanded="false" />
+            <element signature="e#638#661#0" expanded="false" />
+            <element signature="n#!!block;n#IResizeObservable#0" expanded="false" />
+            <element signature="e#1115#1201#0" expanded="false" />
+            <element signature="e#1211#1312#0" expanded="false" />
+            <element signature="n#!!block;n#_setBreakpointsArray#0;n#ReactResizeObserver#0" expanded="false" />
+            <marker date="1532774522914" expanded="true" signature="3617:3869" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/cart/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1532774823154" expanded="true" signature="1540:1542" ph="{...}" />
+            <marker date="1532774823154" expanded="true" signature="1540:1602" ph="{...}" />
+            <marker date="1532774823154" expanded="true" signature="1543:1601" ph="{...}" />
+            <marker date="1532774823154" expanded="true" signature="1543:1602" ph="{...}" />
           </folding>
         </state>
       </provider>

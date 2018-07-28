@@ -1,7 +1,7 @@
 import {IState} from '../types/Redux'
 
 const initialState: IState = {
-	// breakPoint: 540,
+	breakPoint: 540,
 	cart: {
 		discountCode: {},
 		items: {},

@@ -2,7 +2,7 @@ import {IProductState} from './Products'
 import {Action, Dispatch} from 'redux'
 
 export interface IState {
-	// breakPoint: number,
+	breakPoint: number,
 	cart: {
 		discountCode: any,
 		paymentType: string,

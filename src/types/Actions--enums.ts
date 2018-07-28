@@ -8,3 +8,7 @@ export enum CartActionTypes {
 	UPDATE_CART_STATE = '@@cart/UPDATE_STATE',
 	UPDATE_CART_TOTAL = '@@cart/UPDATE_TOTAL'
 }
+
+export enum WindowActionTypes {
+	CHANGE_BREAKPOINT = '@@window/CHANGE_BREAKPOINT'
+}
