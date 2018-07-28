@@ -11,7 +11,6 @@ import {media} from '../../styles/base/mq'
 
 interface IProps {
 	cart: ICartState;
-
 	updateCartState(cart: ILocalStorageCart): void
 }
 

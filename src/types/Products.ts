@@ -30,7 +30,7 @@ export interface IProduct {
 		],
 	acf: {
 		extendedLicense: {
-			isExtended: boolean,
+			isExtended: string,
 			item: string
 		}
 	}

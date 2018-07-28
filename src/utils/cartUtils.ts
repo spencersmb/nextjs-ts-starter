@@ -1,4 +1,4 @@
-import {ICartItem, ILocalStorageCart} from '../types/Cart'
+import {ICartItem, ICartState, ILocalStorageCart} from '../types/Cart'
 import {IProducts} from '../types/Products'
 
 
@@ -38,6 +38,10 @@ export const totalItemsInCart = (items: ICartItem): number => {
  */
 export const getCartTotal = (items: ICartItem, products: IProducts): string => {
 
+	// Safety check - or else we have cart error cus our list is empty due to async
+	if (Object.keys(products).length < 1) {
+		return '0.00'
+	}
 	const itemKeysArray: string[] = Object.keys(items)
 
 	return itemKeysArray.reduce((total, slug: string) => {
@@ -72,4 +76,40 @@ export const getLocalStorageCart = (): ILocalStorageCart => {
 		items: {},
 		totalItems: 0
 	}
+}
+
+/**
+ * Check if the item that is going to be added to the cart already exists.
+ *
+ * How it works:
+ * Take the slug of the item going to be added, and the current items in the cart to check if the
+ * item is in the cart already or not. If its found - return true.
+ *
+ * @param {string} itemSlug - Slug of the product going to be added to cart
+ * @param {object} itemsList - All products currently in Redux Cart
+ * @return {boolean}
+ */
+export const checkCartForExistingItem = (itemSlug: string, itemsList: any = {}): boolean => {
+	return Object.keys(itemsList).filter(key => key === itemSlug).length > 0
+}
+
+/**
+ * Update LocalStorage
+ *
+ * How it works;
+ * Filter out possibly sensitive data like discount code and paymentType
+ *
+ * @param {ICartState} updatedCart - New Cart Object from Redux Store
+ */
+export const updateLocalStorageCart = (updatedCart: ICartState) => {
+	const allowedKeys = ['items', 'totalItems']
+	const filteredObject = Object.keys(updatedCart)
+		.filter(key => allowedKeys.includes(key))
+		.reduce((obj, key) => {
+			obj[key] = updatedCart[key]
+			return obj
+		}, {})
+
+	localStorage.setItem('et_shop_cart', JSON.stringify(filteredObject))
+
 }

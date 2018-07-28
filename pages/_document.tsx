@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
 		return (
 			<html lang='en'>
 			<Head title='Example Website title'>
+				<script id="stripe-js" src="https://js.stripe.com/v3/" async={true}/>
 				<link href='/static/styles/toastr.min.css' rel='stylesheet' type='text/css'/>
 				{styleTags}
 			</Head>

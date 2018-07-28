@@ -41,7 +41,6 @@ interface IResizeObservable {
 }
 
 interface IResizeObserverType {
-	// constructor(any): any;
 	observe(target: Element | null): void;
 
 	unobserve(target: Element): void;
@@ -84,6 +83,7 @@ class ReactResizeObserver extends React.Component<IProps, IState> {
 
 	// Convert BPS object into an array
 	// Not currently used
+	// Used for responsive img data srces
 	_setBreakpointsArray() {
 
 		const arr: any = []
@@ -118,6 +118,11 @@ class ReactResizeObserver extends React.Component<IProps, IState> {
 		this._getZindex()
 
 		if (oldBreakpoint !== this.zIndex && Number.isInteger(this.zIndex)) {
+			// HMR safetycheck
+			if (this.zIndex === 0) {
+				console.log('HRM safety error')
+				return
+			}
 			console.log('bp changed', this.zIndex)
 			this.props.changeBreakpoint(this.zIndex)
 		}
@@ -131,11 +136,9 @@ class ReactResizeObserver extends React.Component<IProps, IState> {
 		if (window.getComputedStyle) {
 			// console.log('this.resizer zindex', parseInt(window.getComputedStyle(this.resizer).zIndex, 10))
 
-			// does not work
+			// does not work not sure why I have it here as Else
 			// console.log('this.resizer current style', this.resizer.currentStyle)
 			const zIndex: string | null = window.getComputedStyle(this.resizer).zIndex
-			console.log('zIndex', window.getComputedStyle(this.resizer))
-
 
 			this.zIndex = zIndex ? parseInt(zIndex, 10) : 0
 		} else if (this.resizer && this.resizer.currentStyle) {

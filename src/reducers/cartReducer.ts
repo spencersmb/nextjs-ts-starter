@@ -13,8 +13,8 @@ export const cartReducer: Reducer<ICartState> = (state: ICartState = initialStat
 			return {
 				...state,
 				items: {
-					...action.payload.item, // updated Item
-					...state.items
+					...state.items,
+					...action.payload.item, // new Item
 				}
 			}
 
@@ -25,7 +25,7 @@ export const cartReducer: Reducer<ICartState> = (state: ICartState = initialStat
 
 			return {
 				...state,
-				totalItems
+				totalItems // es6 destructure totalItems: totalItems
 			}
 		case CartActionTypes.UPDATE_CART_STATE:
 			return {

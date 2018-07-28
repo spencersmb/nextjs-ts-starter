@@ -6,15 +6,9 @@ import {ICtx} from '../types/Ctx'
 // import { getAllProducts } from '../actions/productsActions'
 // import LoadingBar from '../components/loadingBar/loadingBar'
 
-interface IStaticInterface {
-	getInitialProps(ctx: ICtx): void
+export interface IStaticInterface {
+	getInitialProps?(ctx: ICtx): void
 }
-
-//
-// interface IProcess extends Process{
-// 	browser: string | void
-// }
-// declare var process: IProcess
 
 export default <C extends object>(Page: React.ComponentType<C> & IStaticInterface, title: string = '') => {
 	class GenericLayout extends React.Component<any> {

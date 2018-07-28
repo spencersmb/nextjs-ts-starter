@@ -7,6 +7,7 @@ import {CSSTransition} from 'react-transition-group'
 import {ICartState} from '../../../types/Cart'
 import {IProductState} from '../../../types/Products'
 import {IState} from '../../../types/Redux'
+
 import {getCartTotal} from '../../../utils/cartUtils'
 
 interface IPropsPublic {

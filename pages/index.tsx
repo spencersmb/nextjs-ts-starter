@@ -5,7 +5,7 @@ import {Action, bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {getAllProducts} from '../src/actions/productActions'
 import {Dispatch} from 'redux'
-// import ProductsList from '../components/products/productsList'
+import ProductsList from '../src/components/products/list'
 import {ICtx} from '../src/types/Ctx'
 import {IState} from '../src/types/Redux'
 import {IProductState} from '../src/types/Products'
@@ -40,7 +40,7 @@ export class HomePage extends React.Component<IProps> {
 					<h1 className="title">Welcome to Next!</h1>
 					<h3>Sample Products Lists</h3>
 					<div>
-						{/*<ProductsList/>*/}
+						<ProductsList/>
 					</div>
 					<p className="description">To get started, edit <code>pages/index.js</code> and save to reload.</p>
 					<div className="row">
