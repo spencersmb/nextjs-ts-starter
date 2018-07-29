@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Link from 'next/link'
-import {IProduct} from '../../../types/Products'
+import {IProduct} from '@et/types/Products'
 
 interface IProps extends IProduct {
 	index: number

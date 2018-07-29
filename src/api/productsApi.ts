@@ -1,4 +1,4 @@
-import {config} from 'env'
+import {config} from '@et/env'
 import fetched from 'isomorphic-unfetch'
 
 class ProductsApi {

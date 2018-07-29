@@ -1,14 +1,11 @@
-// @flow
-
 import * as React from 'react'
 import {connect} from 'react-redux'
 import styled from 'styled-components'
 import {CSSTransition} from 'react-transition-group'
-import {ICartState} from '../../../types/Cart'
-import {IProductState} from '../../../types/Products'
-import {IState} from '../../../types/Redux'
-
-import {getCartTotal} from '../../../utils/cartUtils'
+import {getCartTotal} from '@et/utils/cartUtils'
+import {ICartState} from '@et/types/Cart'
+import {IProductState} from '@et/types/Products'
+import {IState} from '@et/types/Redux'
 
 interface IPropsPublic {
 	isOpen: boolean,

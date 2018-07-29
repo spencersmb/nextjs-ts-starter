@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {StripeProvider, Elements} from 'react-stripe-elements'
-import {config} from 'env'
-import {ICustomWindow} from 'types/Window'
+import {config} from '@et/env'
+import {ICustomWindow} from '@et/types/Window'
 
 interface IStripeProviderProps {
 	stripe: any | null

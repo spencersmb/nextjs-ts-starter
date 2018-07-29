@@ -1,11 +1,11 @@
 /* tslint:disable variable-name no-string-literal */
 import React from 'react'
-import {media} from '../../styles/base/mq'
 import styled from 'styled-components'
 import {connect} from 'react-redux'
 import {Action, bindActionCreators, Dispatch} from 'redux'
 import ResizeObserver from 'resize-observer-polyfill'
-import {changeBreakPoint} from '../../actions/breakPointActions'
+import {media} from '@et/styles/base/mq'
+import {changeBreakPoint} from '@et/actions/breakPointActions'
 
 interface IProps {
 	changeBreakpoint: (breakPoint: number) => void,

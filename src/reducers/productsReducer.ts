@@ -1,9 +1,9 @@
 import initialState from './initialState'
-import * as normalizerUtils from '../utils/normalizrUtils'
+import * as normalizerUtils from '@et/utils/normalizrUtils'
 import {Reducer} from 'redux'
-import {Actions} from '../types/Actions'
-import {ProductsActionTypes} from '../types/Actions--enums'
-import {IProductState} from '../types/Products'
+import {Actions} from '@et/types/Actions'
+import {ProductsActionTypes} from '@et/types/Actions--enums'
+import {IProductState} from '@et/types/Products'
 
 
 export const productsReducer: Reducer<IProductState> = (state: IProductState = initialState.products, action: Actions): IProductState => {

@@ -1,9 +1,9 @@
 import initialState from './initialState'
-import {ICartState} from '../types/Cart'
+import {ICartState} from '@et/types/Cart'
 import {Reducer} from 'redux'
-import {CartActionTypes} from '../types/Actions--enums'
-import {Actions} from '../types/Actions'
-import {totalItemsInCart} from '../utils/cartUtils'
+import {CartActionTypes} from '@et/types/Actions--enums'
+import {Actions} from '@et/types/Actions'
+import {totalItemsInCart} from '@et/utils/cartUtils'
 
 export const cartReducer: Reducer<ICartState> = (state: ICartState = initialState.cart, action: Actions): ICartState => {
 	switch (action.type) {

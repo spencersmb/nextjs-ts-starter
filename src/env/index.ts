@@ -1,5 +1,5 @@
 const prod = process.env.NODE_ENV
-import env from './config.json'
+import env from './data/config.json'
 
 let URL
 if (prod === 'production') {
@@ -15,3 +15,5 @@ export const config = {
 	STRIPE_KEY: prod ? env.STRIPE_LIVE_KEY : env.STRIPE_TEST_KEY,
 	WEBSITE_TITLE: 'Now Thats Delicious!',
 }
+
+

@@ -1,4 +1,4 @@
-import {INormalizedReturn} from '../types/Products'
+import {INormalizedReturn} from '@et/types/Products'
 
 export const transformKeyValueData = (action: any): INormalizedReturn => {
 	return {

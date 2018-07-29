@@ -1,4 +1,4 @@
-import {IState} from '../types/Redux'
+import {IState} from '@et/types/Redux'
 
 const initialState: IState = {
 	breakPoint: 540,

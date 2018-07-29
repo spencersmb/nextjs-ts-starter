@@ -17,16 +17,18 @@ module.exports = {
 		['module-resolver', {
 			'root': ['.'],
 			'alias': {
-				'api': './src/api',
-				'actions': './src/actions',
-				'env': './src/env',
+				'@et/api': './src/api',
+				'@et/actions': './src/actions',
+				'@et/cart': './src/components/cart',
+				'@et/env': './src/env',
 				'@et/header': './src/components/header',
-				'hoc': './src/hoc',
-				'products': './src/components/products',
-				'stripe': './src/components/stripe',
-				'styles': './src/components/styles',
-				'types': './src/types',
-				'utils': './src/utils',
+				'@et/hoc': './src/components/hoc',
+				'@et/products': './src/components/products',
+				'@et/stripe': './src/components/stripe',
+				'@et/styles': './src/styles',
+				'@et/types': './src/types',
+				'@et/utils': './src/utils',
+				'@et/window': './src/components/window',
 			}
 		}]
 	],

@@ -1,5 +1,5 @@
-import {WindowActionTypes} from '../types/Actions--enums'
-import {Actions} from '../types/Actions'
+import {WindowActionTypes} from '@et/types/Actions--enums'
+import {Actions} from '@et/types/Actions'
 
 export const changeBreakPoint = (breakPoint: number): Actions => {
 	return {

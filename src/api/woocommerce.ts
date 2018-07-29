@@ -1,6 +1,6 @@
-import {config} from 'env'
+import {config} from '@et/env'
 import fetched from 'isomorphic-unfetch'
-import {IOrderDetails} from 'types/Order'
+import {IOrderDetails} from '@et/types/Order'
 
 interface IFinalOrder extends IOrderDetails {
 	payment_token: string

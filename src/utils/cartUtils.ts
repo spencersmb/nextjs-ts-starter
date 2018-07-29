@@ -1,5 +1,5 @@
-import {ICartItem, ICartState, ILocalStorageCart} from '../types/Cart'
-import {IProducts} from '../types/Products'
+import {ICartItem, ICartState, ILocalStorageCart} from '@et/types/Cart'
+import {IProducts} from '@et/types/Products'
 
 
 /**

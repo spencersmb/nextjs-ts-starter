@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {connect} from 'react-redux'
 import Head from 'next/head'
-import {ICtx} from '../types/Ctx'
+import {ICtx} from '@et/types/Ctx'
 
 // import { getAllProducts } from '../actions/productsActions'
 // import LoadingBar from '../components/loadingBar/loadingBar'

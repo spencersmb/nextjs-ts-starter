@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import StandardHoc from '../src/hoc/standardHoc'
+import StandardHoc from '@et/hoc/standardHoc'
 import {Action, bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import {getAllProducts} from 'actions/productActions'
+import {getAllProducts} from '@et/actions/productActions'
 import {Dispatch} from 'redux'
-import ProductsList from '../src/components/products/list/index'
-import {ICtx} from 'types/Ctx'
-import {IState} from 'types/Redux'
-import {IProductState} from 'types/Products'
+import ProductsList from '@et/products/list'
+import {ICtx} from '@et/types/Ctx'
+import {IState} from '@et/types/Redux'
+import {IProductState} from '@et/types/Products'
 
 
 interface IProps {

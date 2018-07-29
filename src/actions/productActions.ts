@@ -1,16 +1,16 @@
 /* tslint:disable object-literal-sort-keys*/
 
-import {IProduct} from 'types/Products'
-import {CartActionTypes, ProductsActionTypes} from 'types/Actions--enums'
+import {IProduct} from '@et/types/Products'
+import {CartActionTypes, ProductsActionTypes} from '@et/types/Actions--enums'
 import {normalize} from 'normalizr'
 import * as schema from '../normalizr/productSchema'
-import {Actions} from 'types/Actions'
+import {Actions} from '@et/types/Actions'
 import {Action, Dispatch} from 'redux'
 import {toastr} from 'react-redux-toastr'
-import {IState} from 'types/Redux'
-import ProductsApi from 'api/productsApi'
-import {ICartItem, ILocalStorageCart} from 'types/Cart'
-import {checkCartForExistingItem} from 'utils/cartUtils'
+import {IState} from '@et/types/Redux'
+import ProductsApi from '@et/api/productsApi'
+import {ICartItem, ILocalStorageCart} from '@et/types/Cart'
+import {checkCartForExistingItem} from '@et/utils/cartUtils'
 
 /*
  Make API Call to get DATA

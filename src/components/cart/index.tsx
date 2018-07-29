@@ -1,16 +1,17 @@
 import * as React from 'react'
 import {connect} from 'react-redux'
-import {IState} from '../../types/Redux'
-import {ICartState, ILocalStorageCart} from '../../types/Cart'
-import CartCheckout from './checkout'
-import {getLocalStorageCart} from '../../utils/cartUtils'
 import {Action, bindActionCreators, Dispatch} from 'redux'
-import {updateCartState} from '../../actions/productActions'
 import styled from 'styled-components'
-import {media} from '../../styles/base/mq'
+import CartCheckout from '@et/cart/checkout'
+import {getLocalStorageCart} from '@et/utils/cartUtils'
+import {updateCartState} from '@et/actions/productActions'
+import {media} from '@et/styles/base/mq'
+import {ICartState, ILocalStorageCart} from '@et/types/Cart'
+import {IState} from '@et/types/Redux'
 
 interface IProps {
 	cart: ICartState;
+
 	updateCartState(cart: ILocalStorageCart): void
 }
 

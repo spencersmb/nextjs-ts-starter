@@ -1,10 +1,10 @@
 import React from 'react'
 import {Action, bindActionCreators, Dispatch} from 'redux'
 import {connect} from 'react-redux'
-import {ICartItem, ICartState} from '../../../types/Cart'
-import {IState} from '../../../types/Redux'
-import {addProductToCart} from '../../../actions/productActions'
-import {updateLocalStorageCart} from '../../../utils/cartUtils'
+import {addProductToCart} from '@et/actions/productActions'
+import {updateLocalStorageCart} from '@et/utils/cartUtils'
+import {ICartItem, ICartState} from '@et/types/Cart'
+import {IState} from '@et/types/Redux'
 
 interface IPropsPublic {
 	selectedProduct: string | null,

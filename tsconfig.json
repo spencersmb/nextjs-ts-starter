@@ -15,35 +15,41 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "paths": {
-      "api/*": [
+      "@et/api/*": [
         "api/*"
       ],
-      "actions/*": [
+      "@et/actions/*": [
         "actions/*"
       ],
-      "env/*": [
-        "env/*"
+      "@et/cart/*": [
+        "components/cart/*"
+      ],
+      "@et/env": [
+        "env/index"
       ],
       "@et/header": [
         "components/header/index"
       ],
-      "hoc/*": [
-        "hoc/*"
+      "@et/hoc/*": [
+        "components/hoc/*"
       ],
-      "products/*": [
+      "@et/products/*": [
         "components/products/*"
       ],
-      "stripe/*": [
+      "@et/stripe/*": [
         "components/stripe/*"
       ],
-      "styles/*": [
-        "components/styles/*"
+      "@et/styles/*": [
+        "styles/*"
       ],
-      "types/*": [
+      "@et/types/*": [
         "types/*"
       ],
-      "utils/*": [
+      "@et/utils/*": [
         "utils/*"
+      ],
+      "@et/window/*": [
+        "components/window/*"
       ]
     },
     "forceConsistentCasingInFileNames": true,
