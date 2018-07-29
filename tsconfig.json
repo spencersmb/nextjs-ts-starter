@@ -13,7 +13,39 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
+    "baseUrl": "src",
+    "paths": {
+      "api/*": [
+        "api/*"
+      ],
+      "actions/*": [
+        "actions/*"
+      ],
+      "env/*": [
+        "env/*"
+      ],
+      "@et/header": [
+        "components/header/index"
+      ],
+      "hoc/*": [
+        "hoc/*"
+      ],
+      "products/*": [
+        "components/products/*"
+      ],
+      "stripe/*": [
+        "components/stripe/*"
+      ],
+      "styles/*": [
+        "components/styles/*"
+      ],
+      "types/*": [
+        "types/*"
+      ],
+      "utils/*": [
+        "utils/*"
+      ]
+    },
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,

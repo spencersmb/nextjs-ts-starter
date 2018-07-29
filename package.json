@@ -7,7 +7,8 @@
     "dev": "run-p styleguide nextDev",
     "nextDev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
+    "export": "next export",
     "styleguide": "styleguidist server --config styleguide.config.js",
     "styleguide:build": "styleguidist build --config styleguide.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-typescript": "1.1.0",
+    "babel-plugin-module-resolver": "^3.1.1",
     "express": "^4.16.3",
     "form-data": "^2.3.2",
     "gsap": "^1.20.3",
@@ -54,6 +56,8 @@
     "babel-plugin-styled-components": "^1.5.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-plugin-import": "^2.13.0",
     "fork-ts-checker-webpack-plugin": "^0.2.8",
     "jest": "^22.4.3",
     "nodemon": "^1.17.5",

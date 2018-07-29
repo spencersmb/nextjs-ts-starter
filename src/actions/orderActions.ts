@@ -1,8 +1,8 @@
-import {IOrderComplete, IOrderDetails} from '../types/Order'
+import {IOrderComplete, IOrderDetails} from 'types/Order'
 import {Action, Dispatch} from 'redux'
-import {OrderActionTypes} from '../types/Actions--enums'
-import {IState} from '../types/Redux'
-import CheckoutApi from '../api/wcApi'
+import {OrderActionTypes} from 'types/Actions--enums'
+import {IState} from 'types/Redux'
+import CheckoutApi from 'api/woocommerce'
 
 export const createOrder = (orderData: IOrderDetails, stripeTokenId: string) => async (dispatch: Dispatch<Action, IState>): Promise<IOrderComplete> => {
 	dispatch({

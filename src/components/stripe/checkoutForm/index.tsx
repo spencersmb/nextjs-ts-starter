@@ -2,9 +2,9 @@ import React from 'react'
 import {injectStripe, CardElement, ReactStripeElements} from 'react-stripe-elements'
 import {connect} from 'react-redux'
 import {Action, bindActionCreators, Dispatch} from 'redux'
-import {IState} from '../../../../types/Redux'
-import {IOrderComplete, IOrderDetails} from '../../../../types/Order'
-import {createOrder} from '../../../../actions/orderActions'
+import {IState} from 'types/Redux'
+import {IOrderComplete, IOrderDetails} from 'types/Order'
+import {createOrder} from 'actions/orderActions'
 
 export const logFormData = (formData: any) => {
 	for (const pair of formData.entries()) {

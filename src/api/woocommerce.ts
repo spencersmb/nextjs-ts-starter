@@ -1,8 +1,6 @@
-// @flow
-
-import {env} from './envConfig'
+import {config} from 'env'
 import fetched from 'isomorphic-unfetch'
-import {IOrderDetails} from '../types/Order'
+import {IOrderDetails} from 'types/Order'
 
 interface IFinalOrder extends IOrderDetails {
 	payment_token: string
@@ -10,7 +8,7 @@ interface IFinalOrder extends IOrderDetails {
 
 class CheckoutApi {
 	static submitOrder(orderData: IFinalOrder): Promise<Response> {
-		const url: string = `${env.BACKEND_URL}/wp-json/customroutes/orders`
+		const url: string = `${config}BACKEND_URL}/wp-json/customroutes/orders`
 
 		return fetched(
 			url,

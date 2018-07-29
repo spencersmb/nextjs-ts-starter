@@ -13,7 +13,6 @@ export class ProductItem extends React.Component<IProps> {
 	}
 
 	render() {
-		console.log('this.props', this.props)
 
 		return (
 			<div>

@@ -4,7 +4,7 @@ import App, {Container} from 'next/app'
 import withRedux from 'next-redux-wrapper'
 import {initStore} from '../src/store'
 import ResizeObserver from '../src/components/window/resizeObservable'
-import MyShoppingCart from '../src/components/cart'
+import MyShoppingCart from '../src/components/cart/index'
 import ReduxToastr from 'react-redux-toastr'
 
 const Wrapper: React.SFC<any> = (props): any => {

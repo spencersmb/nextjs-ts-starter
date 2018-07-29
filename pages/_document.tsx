@@ -1,6 +1,6 @@
 import React from 'react'
 import Document, {Main, NextScript} from 'next/document'
-import Head from '../src/components/header'
+import Head from '@et/header'
 import {ServerStyleSheet} from 'styled-components'
 import '../src/styles/base/global'
 

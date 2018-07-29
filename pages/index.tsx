@@ -3,12 +3,12 @@ import Link from 'next/link'
 import StandardHoc from '../src/hoc/standardHoc'
 import {Action, bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import {getAllProducts} from '../src/actions/productActions'
+import {getAllProducts} from 'actions/productActions'
 import {Dispatch} from 'redux'
-import ProductsList from '../src/components/products/list'
-import {ICtx} from '../src/types/Ctx'
-import {IState} from '../src/types/Redux'
-import {IProductState} from '../src/types/Products'
+import ProductsList from '../src/components/products/list/index'
+import {ICtx} from 'types/Ctx'
+import {IState} from 'types/Redux'
+import {IProductState} from 'types/Products'
 
 
 interface IProps {
@@ -21,7 +21,18 @@ interface IProps {
 
 export class HomePage extends React.Component<IProps> {
 	static async getInitialProps(ctx: ICtx) {
-		await ctx.store.dispatch(getAllProducts())
+
+		const isBrowser = typeof window !== 'undefined'
+		if (!isBrowser) {
+
+			const state = ctx.store.getState()
+			const productsArray = Object.keys(state.products.list) || []
+
+			if (productsArray.length === 0) {
+				await ctx.store.dispatch(getAllProducts())
+			}
+		}
+
 		return {}
 	}
 

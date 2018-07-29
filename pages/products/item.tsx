@@ -5,24 +5,23 @@ import Head from 'next/head'
 import {withRouter, WithRouterProps} from 'next/router'
 import {connect} from 'react-redux'
 import {Action, bindActionCreators, Dispatch} from 'redux'
-import {IProduct, IProductState} from '../../src/types/Products'
-import {Actions} from '../../src/types/Actions'
-import {ICtx} from '../../src/types/Ctx'
-import {IWithRouter} from '../../src/types/NextJS'
-import {IState} from '../../src/types/Redux'
-import {getAllProducts} from '../../src/actions/productActions'
-import StandardHoc from '../../src/hoc/standardHoc'
-import AddToCartButton from '../../src/components/products/addToCartBtn'
-import StripeProviderWrapper from '../../src/components/cart/stripe/provider'
-import CheckoutForm from '../../src/components/cart/stripe/checkoutForm'
-// import StripeForm from '../../components/stripe/stripeProvider'
+import {IProduct, IProductState} from 'types/Products'
+import {Actions} from 'types/Actions'
+import {ICtx} from 'types/Ctx'
+import {IWithRouter} from 'types/NextJS'
+import {IState} from 'types/Redux'
+import {getAllProducts} from 'actions/productActions'
+import StandardHoc from 'hoc/standardHoc'
+import AddToCartButton from 'products/addToCartBtn'
+import StripeProviderWrapper from 'stripe/provider'
+import CheckoutForm from 'stripe/checkoutForm/index'
 
 const Content = (props: any) => {
 	return (
 		(
 			<div>
 				<h1>{props.name}</h1>
-				<p>This is the product content.</p>
+				<p>This is the product content src.</p>
 			</div>
 		)
 	)
@@ -39,12 +38,12 @@ interface ILocalState {
 	selectedProduct: IProduct | { slug: null }
 }
 
-declare var process: any
 
 export class ProductDetailPage extends React.Component<IProps & WithRouterProps, ILocalState> {
 	static async getInitialProps(ctx: ICtx) {
 		/* If refreshing get all the poppers, else poppers should already be loaded */
-		if (!process.browser) {
+		const isBrowser = typeof window !== 'undefined'
+		if (!isBrowser) {
 
 			const state = ctx.store.getState()
 			const productsArray = Object.keys(state.products.list) || []
@@ -102,7 +101,6 @@ export class ProductDetailPage extends React.Component<IProps & WithRouterProps,
 				<StripeProviderWrapper>
 					<CheckoutForm/>
 				</StripeProviderWrapper>
-				{/*<StripeForm/>*/}
 				<AddToCartButton
 					selectedProduct={this.state.selectedProduct.slug}/>
 			</div>

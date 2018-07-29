@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {StripeProvider, Elements} from 'react-stripe-elements'
-import {env} from '../../../../api/envConfig'
-import {ICustomWindow} from '../../../../types/Window'
+import {config} from 'env'
+import {ICustomWindow} from 'types/Window'
 
 interface IStripeProviderProps {
 	stripe: any | null
@@ -26,7 +26,7 @@ export class StripeProviderWrapper extends React.Component<{}, IState> {
 
 			this.setState(() => ({
 				show: true,
-				stripe: window.Stripe(env.STRIPE_KEY)
+				stripe: window.Stripe(config.STRIPE_KEY)
 			}), () => {
 				console.log('stripe already loaded complete')
 
@@ -42,7 +42,7 @@ export class StripeProviderWrapper extends React.Component<{}, IState> {
 	loadStripe = () => {
 		this.setState(() => ({
 			show: true,
-			stripe: window.Stripe(env.STRIPE_KEY)
+			stripe: window.Stripe(config.STRIPE_KEY)
 		}), () => {
 			console.log('loadStripe complete')
 		})
