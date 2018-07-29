@@ -5,6 +5,7 @@ const dir = __dirname + './utils/Wrapper'
 module.exports = {
 	assetsDir: 'docs/',
 	ignore: [
+		'**/__test__/**',
 		'src/setupTests.ts',
 		'**/*.spec.ts',
 		'**/*.spec.tsx',

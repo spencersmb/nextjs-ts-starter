@@ -1,33 +1,33 @@
+interface ICat {
+	id: number,
+	name: string,
+	slug: string
+}
+
+interface Image {
+	id: number,
+	src: string,
+	name: string,
+	alt: string
+}
+
+interface Itag {
+	id: number,
+	name: string,
+	slug: string
+}
+
 export interface IProduct {
 	id: number,
 	name: string,
 	description: string,
-	categories: [
-		{
-			id: number,
-			name: string,
-			slug: string
-		}
-		],
+	categories: ICat[],
 	short_description: string,
-	images: [
-		{
-			id: number,
-			src: string,
-			name: string,
-			alt: string,
-		}
-		],
+	images: Image[],
 	price: string,
 	sale_price: string,
 	slug: string,
-	tags: [
-		{
-			id: number,
-			name: string,
-			slug: string
-		}
-		],
+	tags: Itag [],
 	acf: {
 		extendedLicense: {
 			isExtended: string,
