@@ -27,7 +27,6 @@
     "transform": {
       "^.+\\.jsx?$": "./node_modules/babel-jest",
       "^.+\\.tsx?$": "<rootDir>/jest/typescriptTransform.js",
-      "^.test.tsx?$": "<rootDir>/jest/jest-babel-plugin-module-resolver.js",
       "^.+\\.css$": "<rootDir>/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/jest/fileTransform.js"
     },
