@@ -6,7 +6,19 @@ const path = require('path')
 // const publicPath = '/'
 
 module.exports = withTypescript({
-
+	exportPathMap: function () {
+		return {
+			'/': {page: '/'},
+			'/product/watercolor-texture-kit-vol-1': {
+				page: '/products/item',
+				query: {slug: 'watercolor-texture-kit-vol-1'}
+			},
+			'/product/skinny-jeans': {
+				page: '/products/item',
+				query: {slug: 'skinny-jeans'}
+			},
+		}
+	}
 	// webpack (config) {
 	// config.module.rules.push({
 	// 	test: /\.(ts|tsx)$/,
