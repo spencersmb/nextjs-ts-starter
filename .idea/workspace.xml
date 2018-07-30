@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97d3853c-a4c8-4905-adb4-57f4ddba9491" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.babelrc.js" afterPath="$PROJECT_DIR$/.babelrc.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config/styleguide-webpack.config.dev.js" afterPath="$PROJECT_DIR$/config/styleguide-webpack.config.dev.js" />
-      <change beforePath="$PROJECT_DIR$/jest/jest-babel-plugin-module-resolver.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" afterPath="$PROJECT_DIR$/next.config.js" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/types/Products.ts" afterPath="$PROJECT_DIR$/src/types/Products.ts" />
-      <change beforePath="$PROJECT_DIR$/styleguide.config.js" afterPath="$PROJECT_DIR$/styleguide.config.js" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.styleguidist.json" afterPath="" />
-    </list>
+    <list default="true" id="97d3853c-a4c8-4905-adb4-57f4ddba9491" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -40,7 +30,7 @@
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="546">
-                  <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+                  <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -56,11 +46,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".babelrc.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name=".babelrc.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.babelrc.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="104">
-                  <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+                <state relative-caret-position="338">
+                  <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
                   <folding>
                     <element signature="e#93#945#0" expanded="false" />
                     <element signature="e#963#1043#0" expanded="false" />
@@ -75,7 +65,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/cart/__tests__/cart.test.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="123">
-                  <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+                  <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
                     <element signature="e#234#688#0" expanded="false" />
@@ -84,12 +74,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="next.config.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="next.config.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/next.config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-                  <folding />
+                <state relative-caret-position="182">
+                  <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#343#1095#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -220,7 +212,7 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="786" />
+    <option name="x" value="789" />
     <option name="y" value="23" />
     <option name="width" value="1896" />
     <option name="height" value="1395" />
@@ -248,11 +240,6 @@
             <path>
               <item name="et-shoppe-ts" type="b2602c69:ProjectViewProjectNode" />
               <item name="et-shoppe-ts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="et-shoppe-ts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="et-shoppe-ts" type="462c0819:PsiDirectoryNode" />
-              <item name="jest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,15 +310,15 @@
       <workItem from="1532605063988" duration="1562000" />
       <workItem from="1532606634643" duration="8325000" />
       <workItem from="1532614982558" duration="55160000" />
-      <workItem from="1532801425271" duration="26830000" />
+      <workItem from="1532801425271" duration="27620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94709000" />
+    <option name="totallyTimeSpent" value="95499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="786" y="23" width="1896" height="1395" extended-state="0" />
+    <frame x="789" y="23" width="1896" height="1395" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846153" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -343,7 +330,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32846153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32846153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -732,7 +719,7 @@
         <state relative-caret-position="390">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -788,23 +775,10 @@
     <entry file="file://$PROJECT_DIR$/src/components/cart/__tests__/cart.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
             <element signature="e#234#688#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#93#945#0" expanded="false" />
-            <element signature="e#963#1043#0" expanded="false" />
-            <element signature="e#1047#1074#0" expanded="false" />
-            <element signature="e#1098#1594#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -820,16 +794,31 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/next.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="182">
+          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="e#343#1095#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#93#945#0" expanded="false" />
+            <element signature="e#963#1043#0" expanded="false" />
+            <element signature="e#1047#1074#0" expanded="false" />
+            <element signature="e#1098#1594#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
